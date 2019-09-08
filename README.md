@@ -1,7 +1,5 @@
 # Mediainfo for AWS Lambda
 
---
-
 This project compiles Mediainfo under Amazon Linux 2 for use in distributing it to AWS Lambda functions.
 
 Every example I could find on the web used ancient versions of Mediainfo. This compiles the latest version, which has quite a different output format.
