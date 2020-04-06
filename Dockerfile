@@ -20,3 +20,15 @@ WORKDIR /root/MediaInfo_CLI_GNU_FromSource
 RUN ./CLI_Compile.sh --with-libcurl=/root/MediaInfo_CLI_GNU_FromSource/curl --enable-staticlibs
 RUN cp MediaInfo/Project/GNU/CLI/mediainfo .
 RUN cp /lib64/libcurl.so.4 .
+RUN cp /lib64/libcrypt.so.1 .
+RUN cp /lib64/libidn2.so.0 .
+RUN cp /lib64/liblber-2.4.so.2 .
+RUN cp /lib64/libldap-2.4.so.2 .
+RUN cp /lib64/libnghttp2.so.14 .
+RUN cp /lib64/libnss3.so .
+RUN cp /lib64/libnssutil3.so .
+RUN cp /lib64/libsasl2.so.3 .
+RUN cp /lib64/libsmime3.so .
+RUN cp /lib64/libssh2.so.1 .
+RUN cp /lib64/libssl3.so .
+RUN cp /lib64/libunistring.so.0 .

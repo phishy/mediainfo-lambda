@@ -10,15 +10,27 @@ Every example I could find on the web used ancient versions of Mediainfo. This c
 
 ### Compiling Mediainfo
 
-This compiles Mediainfo with libcurl so that it can be useful with URLs.
+This compiles Mediainfo with libcurl and other libraries so that it can be useful with signed URLs.
 
 `./compile.sh`
 
-This produces two files in you current working directory:
+This produces 14 files in you current working directory:
 
 * `mediainfo`
+* `libcrypt.so.1`
 * `libcurl.so.4`
+* `libidn2.so.0`
+* `liblber-2.4.so.2`
+* `libldap-2.4.so.2`
+* `libnghttp2.so.14`
+* `libnss3.so`
+* `libnssutil3.so`
+* `libsasl2.so.3`
+* `libsmime3.so`
+* `libssh2.so.1`
+* `libssl3.so`
+* `libunistring.so.0`
 
 ### Usage
 
-If you place `libcurl.so.4` in the base directory of the Lambda, it will be found by the `LD_LIBRARY_PATH` of the execution environment. After that, you can run `mediainfo` from just about anywhere.
+If you place the library files in dist/ (`*.so.*`) in the base directory of the Lambda, they will be found by the `LD_LIBRARY_PATH` of the execution environment. After that, you can run `mediainfo` from just about anywhere.
